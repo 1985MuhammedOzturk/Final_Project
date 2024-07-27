@@ -1,0 +1,115 @@
+
+/* General form styling */
+.formcontainer {
+    max-width: 600px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formcontainer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 20px;
+}
+
+.textfield {
+    margin-bottom: 15px;
+}
+
+.textfield label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textfield input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px; /* Space for error message */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for error */
+input.error {
+    border: 2px solid red;
+    background-color: #ffecec;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    height: 20px; /* Reserve space for message */
+    display: block; /* The block to appear below the input */
+    margin-top: 5px;
+}
+
+/* Button style */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e2e2e2;
+}
+
+/* Specific styles for the submit button  */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Reset button styling */
+button[type="reset"] {
+    background-color: #fa0e0e;
+    color: #333;
+}
+
+/* Checkbox alignment */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the checkbox */
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px; /* Space between the checkbox and the label */
+   
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+
+.checkbox label {
+    order: 1; /* the label appears to the right of the checkbox */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .formcontainer {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
